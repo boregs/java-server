@@ -5,7 +5,6 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.io.IOException;
 import java.nio.file.Path;
-import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 
 import static java.nio.file.Files.newBufferedReader;
@@ -59,7 +58,7 @@ public class Main {
 
             }
 
-            }catch(IOException e){
+            } catch(IOException e){
 
             System.err.println("> Erro ao iniciar o servidor: " + e.getMessage());
         }
