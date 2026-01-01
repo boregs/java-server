@@ -40,7 +40,7 @@ public class ClientHandler implements Runnable {
         } catch (IOException clientConectErr){
             System.err.println("> Erro na conexao com o cliente: " + clientConectErr.getMessage());
             }
-            // fecha a conexao com o cliente
+            //fecha a conexao com o cliente
             finally {
                 try {
                     clientSocket.close();
