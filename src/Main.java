@@ -8,9 +8,13 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         int port = 8080;
+        int backlog = 2000;
 
-        try (ServerSocket server = new ServerSocket(port)) {
-            ExecutorService pool = Executors.newFixedThreadPool(1000);
+        // damos o backlog como 2000 para permitir mais conexoes pendentes
+        try (ServerSocket server = new ServerSocket(port, backlog)) {
+
+            // iniciamos a pool com um numero pequeno para previnir sobrecarga do servidor
+            ExecutorService pool = Executors.newFixedThreadPool(100);
             System.out.println("> Servidor Iniciado na porta: " + port);
 
             while (true) {
