@@ -50,12 +50,12 @@ Confirme que quer rodar o teste e veja os resultados no console.
 
 Se quiser trocar o numero de conexões simuladas, altere a variavel "numberSimClients" na linha 12 do StressTest.java
 ```bash
-   int numberSimClients = 1000; // altere esse numero para o valor desejado
+int numberSimClients = 1000; // altere esse numero para o valor desejado
    ```
 Você também pode alterar o numero de threads e o backlog do servidor alterando as variaveis "backlog" na linha 11 e o atributo
 na linha 17 do Main.java
 ```bash
-    // altere essas linhas
-    int backlog = 2000;
-    ExecutorService pool = Executors.newFixedThreadPool(100);
+// altere essas linhas
+int backlog = 2000;
+ExecutorService pool = Executors.newFixedThreadPool(100);
 ```
