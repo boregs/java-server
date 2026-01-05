@@ -28,7 +28,7 @@ preparar para a utilização de frameworks mais avançados no futuro como Spring
    
 3. Compile o código fonte:
    ```bash
-   javac Server.java
+   javac Main.java
    ```
    
 ou, se estiiver com o repositorio em uma IDE, apenas rode o projeto.
